@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:condidate_name",
+ "creation": "2024-09-18 15:30:49.138664",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "condidate_name",
+  "interview_name",
+  "role_applied",
+  "interview_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "condidate_name",
+   "fieldtype": "Link",
+   "label": "Condidate Name",
+   "options": "Candidate Data",
+   "unique": 1
+  },
+  {
+   "fieldname": "interview_name",
+   "fieldtype": "Link",
+   "label": "Interview Name",
+   "options": "interviewer"
+  },
+  {
+   "fieldname": "role_applied",
+   "fieldtype": "Select",
+   "label": "Role Applied",
+   "options": "Fronted\nBackend"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Hired\nRejected\nIn progress"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 16:57:46.925988",
+ "modified_by": "Administrator",
+ "module": "interview_management_system",
+ "name": "interview Schedule",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
